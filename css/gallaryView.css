@@ -1,8 +1,8 @@
-.gallaryView {
+.galleryView {
   display: flex;
   flex-wrap: wrap;
 }
-.gallaryView .item {
+.galleryView .item {
   height: 260px;
   overflow: hidden;
   flex: 0 0 25%;
@@ -10,35 +10,35 @@
   box-sizing: border-box;
 }
 @media screen and (max-width: 900px) {
-  .gallaryView .item {
+  .galleryView .item {
     flex: 0 0 33.3%;
   }
 }
 @media screen and (max-width: 600px) {
-  .gallaryView .item {
+  .galleryView .item {
     flex: 0 0 50%;
     padding: 4px;
   }
 }
-.gallaryView .imgWrap {
+.galleryView .imgWrap {
   width: 100%;
   height: 157px;
   overflow: hidden;
   border-radius: 8px 8px 0 0;
 }
-.gallaryView .imgWrap img {
+.galleryView .imgWrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.gallaryView .textBx {
+.galleryView .textBx {
   padding: 6px 10px;
 }
-.gallaryView .category {
+.galleryView .category {
   font-size: 12px;
   color: #5D5E66;
 }
-.gallaryView .tit {
+.galleryView .tit {
   font-size: 13px;
   font-weight: bold;
   color: #000;
@@ -48,14 +48,14 @@
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-.gallaryView .sub {
+.galleryView .sub {
   font-size: 13px;
   color: #A3A4AD;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.gallaryView .sub > span + span::before {
+.galleryView .sub > span + span::before {
   content: "";
   display: inline-block;
   width: 1px;
@@ -63,7 +63,7 @@
   background: #A3A4AD;
   margin: 0 8px;
 }
-.gallaryView .date {
+.galleryView .date {
   font-size: 13px;
   color: #A3A4AD;
 }
