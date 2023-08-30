@@ -266,6 +266,7 @@
   width: 100%;
   overflow-x: auto;
 }
+.searchWrap .searchBody select,
 .searchWrap .searchBody input {
   outline: none;
 }
