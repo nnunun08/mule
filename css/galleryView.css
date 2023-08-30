@@ -273,10 +273,6 @@
   max-width: 130px;
   width: 40%;
 }
-.searchWrap .searchBody input[type=tel]:focus,
-.searchWrap .searchBody input[type=text]:focus {
-  outline: 2px solid #BA43AE;
-}
 .searchWrap .searchBody input[type=tel]::-moz-placeholder, .searchWrap .searchBody input[type=text]::-moz-placeholder {
   color: #B8B8B8;
 }
@@ -294,6 +290,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  color: #000;
 }
 .searchWrap .searchBody label:has(input[type=radio]) {
   font-size: 12px;
@@ -364,6 +361,7 @@
   width: 40%;
   cursor: pointer;
   border-radius: 4px;
+  white-space: nowrap;
 }
 
 .proposalSearch {
@@ -392,6 +390,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  .searchWrap .searchBody label:has(input[type=checkbox]),
+  .searchWrap .searchBody label:has(input[type=radio]),
+  .searchWrap .searchBody input[type=tel],
+  .searchWrap .searchBody input[type=text],
+  .searchWrap .searchBody select {
+    font-size: 11px;
+  }
   .searchWrap .searchHead .appDownload span {
     font-size: 10px;
   }
