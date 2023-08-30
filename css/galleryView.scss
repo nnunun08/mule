@@ -156,18 +156,35 @@
             transform: rotate(180deg);
         }
     }
+
+    .btn-box {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        flex: 0 0 auto;
+    }
+    .newBt {
+        min-width: 64px;
+        padding: 10px 16px;
+        font-size: 12px;
+        border: 0;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        color: #000;
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+        &.black {
+            color: #fff;
+            background-color: #252525;
+            border-color: #252525;
+        }
+    }
 }
 
-.newBt {
-    min-width: 64px;
-    padding: 10px 16px;
-    font-size: 12px;
-    border: 0;
-    color: #fff;
-    background-color: #252525;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
+
 
 
 .searchWrap {
@@ -177,7 +194,7 @@
     padding-left: 4px;
     padding-right: 4px;
     padding-bottom: 40px;
-    overflow-x: auto;
+    // overflow-x: auto;
     .searchHead {
         display: flex;
         justify-content: space-between;
@@ -225,22 +242,16 @@
     .searchBody {
         margin-top: 9px;
         border-top: 1px solid #EEEEEE;
+        .scrolWrap {
+            overflow-x: auto;
+        }
         .dlRow {
             display: flex;
             align-items: center;
             gap: 8px;
             margin: 16px 0;
             padding: 0 10px;
-        }
-        @media screen and (max-width:600px) {
-            .dlRow {
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 0 4px;
-            }
-            .key {
-                width: auto !important;
-            }
+            // overflow-x: auto;
         }
         .key {
             font-size: 13px;
@@ -261,8 +272,9 @@
             gap: 8px;
             margin: 0;
             flex: 1 0 auto;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             width: 100%;
+            overflow-x: auto;
         }
         input[type="tel"],
         input[type="text"] {
@@ -329,6 +341,27 @@
                 }
             }
         }
+        @media screen and (max-width:600px) {
+            select {
+                padding-left: 4px;
+                padding-right: 10px;
+            }
+            .dlRow {
+                gap: 4px;
+            }
+            .key {
+                width: 55px !important;
+                font-size: 11px;
+            }
+            .value {
+                width: auto;
+                gap: 4px;
+            }
+            input[type="tel"],
+            input[type="text"] {
+                width: 35%;
+            }
+        }
     }
 }
 
@@ -372,16 +405,16 @@
 
 
 @media screen and (max-width:360px) {
+    
+}
+
+@media screen and (max-width:600px) {
     .searchWrap .searchHead .appDownload span {
         font-size: 10px;
     }
     .searchWrap .searchHead .appDownload img {
         height: 21px;
     }
-    
-}
-
-@media screen and (max-width:600px) {
     .paging-box:has(.newBt) {
         justify-content: center;
         gap: 20px;
