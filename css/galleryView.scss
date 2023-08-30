@@ -75,7 +75,7 @@
     justify-content: space-between;
     gap: 4px;
     flex: 0 0 auto;
-    padding: 16px;
+    padding: 16px 8px;
     .left {
 
     }
@@ -126,31 +126,7 @@
 }
 
 .paging-box {
-    // &:has(.newBt) {
-    //     // padding: 14px 20px;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     flex-wrap: wrap;
-    //     width: 94%;
-    //     margin: 0 auto;
-    //     margin-top: 15px;
-    //     margin-bottom: 35px;
-    //     gap: 10px;
-    //     // border: 1px solid #EEEEEE;
-    //     // border-radius: 4px;
-    //     box-sizing: border-box;
-    // }
-    // @media screen and (max-width:600px) {
-    //     &:has(.newBt) {
-    //         padding-left: 4px;
-    //         padding-right: 4px;
-    //         width: 100%;
-    //         border-radius: 0;
-    //         border-left: 0;
-    //         border-radius: 0;
-    //     }
-    // }
+    padding: 0 8px;
     .pagination {
         display: flex;
         justify-content: center;
@@ -162,7 +138,7 @@
         border: 1px solid #EEEEEE;
         border-radius: 4px;
         box-sizing: border-box;
-        margin: 0 16px;
+        margin: 0 auto;
         li {
             border-radius: 4px;
             font-size: 13px;
@@ -226,8 +202,8 @@
     max-width: 620px;
     margin: 0 auto;
     margin-top: 40px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-bottom: 40px;
     // overflow-x: auto;
     .searchHead {
