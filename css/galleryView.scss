@@ -279,6 +279,9 @@
             width: 100%;
             overflow-x: auto;
         }
+        input {
+            outline: none;
+        }
         input[type="tel"],
         input[type="text"] {
             font-size: 12px;
@@ -374,7 +377,7 @@
     font-size: 12px;
     font-weight: bold;
     max-width: 192px;
-    min-width: 114px;
+    min-width: 126px;
     width: 40%;
     cursor: pointer;
     border-radius: 4px;
